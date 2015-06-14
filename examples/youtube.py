@@ -6,10 +6,10 @@ devices = pychromecast.get_chromecasts_as_dict().keys()
 print( devices )
 
 selectedDevice = list(devices)[0]
-#selectedDevice = "Nate PC Right"
+selectedDevice = "Nate PC Right"
 print( "\r\nUsing Device: "+selectedDevice )
 
-exit()
+#exit()
 
 cast = pychromecast.get_chromecast(friendly_name=selectedDevice)
 print(cast.device)
